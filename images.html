@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html>
+<head>
+  <title>Learn html</title>
+  <style>
+img{
+    width:100%
+}
+
+  </style>
+</head>
+<body>
+<h1>HTML</h1>
+<h6></h6>
+<p>img tag is empty</p>
+<p>atrributes : src, alt</p>
+<p><img src="railroad-163518_640.jpg" alt="Rail road">
+    broken link icon will be displayed with alt text if browser cannot fin the image</p>
+
+<h6>Inline style/height width attributes</h6>
+&lt;img src="railroad-163518_640.jpg" alt="Railroad" width="500" height="600"&gt;
+<img src="railroad-163518_640.jpg" alt="Rail road" width="500" height="600">
+
+inline style will override styles define internally. then its better to efine height and width in styles.
+&lt;img src="railroad-163518_640.jpg" alt="Railroad" width="500" height="600"&gt;
+<img src="railroad-163518_640.jpg" alt="Railroad" style="width:500;height:600;">
+
+<h6>Image floating</h6>
+<p>CSS float property </p>
+<p><img src="railroad-163518_640.jpg"  style="float: left;height:10vh;width:auto;">image float to the left </p>
+<br>
+<P><img src="railroad-163518_640.jpg" style="float: right;height:10vh;width:auto;">image float to the right</p>
+<br>
+<pre>
+img	Defines an image
+map	Defines an image map
+area	Defines a clickable area inside an image map
+picture	Defines a container for multiple image resources
+
+<h5> map</h5>
+<img src="home.jpg" alt="Workplace" usemap="#workmap" height="auto" width="auto" >
+
+<map name="workmap">
+    <p>
+
+  <area shape="rect" coords="150,40,300,330" alt="Lamp" href="lamp.html">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="110,260,44"  alt="Indoor Plant" href="indoorPlant.htm"&gt;>
+
+</p>
+</map>
+
+&lt;img src="house.jfif" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;
+
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="150,40,300,330" alt="Lamp" href="lamp.html"&gt;
+  &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt;
+  &lt;area shape="circle" coords="337,300,44" alt="Indoor Plant" href="indoorPlant.htm"&gt;
+&lt;/map&gt;
+
+
+</pre>
+</body>
+</html>
