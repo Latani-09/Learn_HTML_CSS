@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn html</title>
+</head>
+<body>
+    <form action="ActionToBePerformedWhenFormIsSubmitted.js">
+        <h5>Sample form</h5>
+        <label for="name">Name <span style="color:red">*</span></label>
+        <input type="text" id="name" name="Name" required autocomplete="off">
+        <br>
+        <label for="email" >email <span style="color:red">*</span></label>
+        <input type="email" id="email" name="email" required   title="type valid email id" >
+        <br>
+        <label for="age" >Age <span style="color:red">*</span></label>
+        <input type="number" id="age" name="email" required>
+
+        <select>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" min="1900-01-01" max="2024-03-14"><br><br>
+        <label>submit</label>
+        <input type="submit" value="Submit">
+        <label>Submit as admin</label>
+        <input type="submit" formaction="/overwritdAction.js" value="Submit as Admin"> <!--formaction overwrite action of form-->
+    </form>
+    </body>
+    </html>
