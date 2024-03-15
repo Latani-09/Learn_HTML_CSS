@@ -2,142 +2,56 @@
 <html>
 <head>
   <title>Learn html</title>
+  <style>
+    body{
+      margin:8px;
+      line-height: 26px;
+    }
+    .container{
+      position: relative;
+    overflow: auto;
+
+    }
+    .top{
+      padding:16px;
+      background-color: darkcyan;
+    }
+    #menulist{
+      width:200px;
+    }
+    #menulist ul{
+      list-style: none;
+    }
+#menulist li{
+ 
+  border:solid black  ;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+
+}
+  </style>
 </head>
 <body>
+  <div class="container " >
+  <div class="top" >
   <h1>HTML  Hyper Text Markup Language</h1> 
-  <h1>heading with h1 tag</h1> 
-  <h2>heading with h2 tag</h2>
-  <h3>heading with h3 tag</h3>
-  <h4>heading with h4 tag</h4>
-  <h5>heading with h5 tag</h5>
-  <h6>heading with h6 tag</h6>
-<p> This is a paragraph </p>
-<p>html is the root element of html document.  </p>
+  </div>
+
+  <div id="menulist">
+<h3>Contents</h3>
+
+<ul>
  
+  <li> <div ><a href="basic.html">Basic</a></div></li>
 
-  <h3>HTML Attributes</h3>
-  <p>Additionl info about element comes with name="value" pair</p>
-
-  <h4>href attribute</h4>
-  <p>
-  &lt;a&gt;  tags define hypelink
-  href specifies URL of the page the link goes to.
-
-  <a href="https://www.w3schools.com">Visit W3Schools</a>
-</p>
-
-<h4>src attribute</h4>
-<p> &lt;img src="img.jpg"&gt;</p>
-<img src="768px-HTML5_Badge.png" alt="HTML5 Logo" width="auto" height="100px">
-<P>url can be soecified in 2 ways.</P>
-<p>Absolute URL </p>
-<p>Relative URL </p>
-   
-<h4>alt attribute</h4>
-<P>for rendering alternate text if img is not displayed. </P>
-<p> &lt;  img src="somewrongurl/unsupported image" alt="HTML5 Logo" width="auto" height="100px" &gt;</p>
-<h4>styles attribute</h4>
-<P>to apply styles to elements</P>
-&lt;p style="color:red;"&gt; This is a red paragraph.&lt;/p&gt; 
-<p style="color:red;">This is a red paragraph.</p>
-<img src="somewrongurl/unsupported image" alt="HTML5 Logo" width="auto" height="100px">
-
-<h4>lang attribute</h4>
-&lt;html lang="en" &gt;
-
-<h4>title attribute</h4>
-&lt;p title="displayed as a tooltip "&gt; when mouse over the element &lt;/p&gt;
-<p title="a tooltip">This is a paragraph.</p>
-
-<h4>Paragraph</h4>
-<p>
-    This paragraph
-    contains a lot of lines
-    in the source code,
-    but the browser
-    ignores it.
-    </p>
-    
-    <p>
-    This paragraph
-    contains         a lot of spaces
-    in the source         code,
-    but the        browser
-    ignores it.
-    </p>
-<h5>HTML horizontal rules</h5>
-The &lt;hr&gt; -> a thematic break in an HTML page, and<hr> is most often displayed as a horizontal rule.
-<h5>HTML Line Breaks</h5>
-&lt;br&gt;
-<h5>preformatted text &lt;pre&gt;</h5>
-<pre>
-    My Bonnie lies over the ocean.
-  
-    My Bonnie lies over the sea.
-  
-    My Bonnie lies over the ocean.
-  
-    Oh, bring back my Bonnie to me.
-  </pre>
-  <h3>HTML styles</h3>
-  &lt;tagname style="property:value;"&gt;&lt;/tagname&gt;
-<h3>formatting</h3>
-  b - Bold text
-    strong - Important text
-
-em - Emphasized text
-    mark - Marked text
-    
-    del - Deleted text  - will be striked
-    ins - Inserted text - will be underlined
-    sub - Subscript text
-    sup - Superscript text
-<p>Do not forget to buy <mark>milk</mark> today.</p>
-
-<h3>Quotes</h3>
-<h4>block quote</h4>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-  For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-  </blockquote>
-<q>small quote</q>
-
-
-<h4>Abbreviations</h4>
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-
-<h4>cite</h4>
-<p><cite>The Scream</cite> by Edvard Munch.Painted in 1893.</p>
-
-
-<h4>Address</h4>
-<address>
-  Written by John Doe.<br>
-  Visit us at:<br>
-  Example.com<br>
-  Box 564, Disneyland<br>
-  USA
-  </address>
-
-  <h4>bdo -Bidireactional overite</h4>
-  <bdo dir="rtl">This text will be written from right to left</bdo>
-
-<h3>Links</h3>
-tag   - a
-attributes :href, target
-target : where to open the current link
-_self - Default. Opens the document in the same window/tab as it was clicked
-<a href="https://www.w3schools.com/" target="_self">W3schools</a>
-
-_blank - Opens the document in a new window or tab
-<a href="https://www.w3schools.com/" target="_blank">W3schools</a>
-
-_parent - Opens the document in the parent frame   
-<a href="https://www.w3schools.com/" target="_parent">W3schools</a>
-
-_top - Opens the document in the full body of the window
-<a href="https://www.w3schools.com/" target="_top">W3schools</a>
-
-<h3> <a href="images.html">IMAGES</a></h3>
-
+  <li><a href="list.html">List</a></li>
+  <li><a href="tables.html">Table</a></li>
+  <li><a href="images.html">Images</a></li>
+  <li><a href="forms.html">Form</a></li>
+  <li><a href="canvas.html">Canvas</a></li>
+</ul>
+</div>
+</div>
 </body>
 </html>

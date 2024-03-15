@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn html Canvas</title>
+
+</head>
+<body>
+    <h3>Canvas</h3>
+
+    <p>
+        The &lt;canvas&gt; element defines a <strong>bitmapped</strong> area in an HTML page.
+            The Canvas API allows JavaScript to draw graphics on the canvas.
+    </p>
+    <canvas id="myCanvas" width="800" height="400"></canvas>
+    <canvas id="piechart" width="800" height="400"></canvas>
+    <script >
+        const myCanvas = document.getElementById("myCanvas");
+        const ctx = myCanvas.getContext("2d");
+
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(50, 200, 300, 150);
+
+        ctx.beginPath();
+        ctx.moveTo(50, 200); 
+        ctx.lineTo(200, 100);
+        ctx.lineTo(350, 200); 
+        ctx.closePath();    
+        ctx.fillStyle = "red";
+        ctx.fill();  
+        
+      //pie chart without using chart 
+        const piechart=document.getElementById("piechart");
+        const piechartctx=piechart.getContext("2d");
+
+        var x=piechart.width/2;
+        var y=piechart.height/2; //center of pie chart
+        var radius=Math.min(x,y);
+        var startAngle=0.25;
+        var endAngle=1.5*Math.PI;
+        piechartctx.beginPath();
+        piechartctx.arc(x, y, radius, startAngle, endAngle);
+        piechartctx.lineWidth = 2;
+        piechartctx.strokeStyle = 'red';
+        piechartctx.stroke();
+
+
+        //fill the chart
+        piechartctx.fillStyle = 'green';
+        //close path 
+        piechartctx.lineTo(x, y); //it will draw line to the center (points specified from path end)
+        piechartctx.fill();
+
+        //fill remaining part
+        piechartctx.beginPath();
+        piechartctx.arc(x, y, radius, endAngle, startAngle);
+        piechartctx.lineWidth = 2;
+        piechartctx.strokeStyle = 'red';
+        piechartctx.stroke();
+
+
+        //fill the chart
+
+        piechartctx.fillStyle = 'blue';
+        //close path 
+        piechartctx.lineTo(x, y); //it will draw line to the center (points specified from path end)
+        piechartctx.fill();
+
+
+
+
+        
+  </script>
+
+        </script>
+</body>
+</html>
