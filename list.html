@@ -1,7 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Learn html</title>
+  <title>Learn CSS</title>
+  <style>
+    body {
+      background-color: chocolate;
+    }
+
+    .header {
+      height: 10vh;
+      min-height: max-content;
+      background-color: antiquewhite;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    header, h1 {
+      color: chocolate;
+    }
+
+    .content {
+      height: 90vh;
+      position: relative;
+      margin-top: 8px;
+    }
+
+    .selectElements {
+      float: left;
+      width: 15%;
+      height: 80%;
+      min-width: fit-content;
+    }
+
+    .selectElements ul{
+        padding-inline-start: 0px;
+    }
+    .selectElements ul li {
+      background-color: darksalmon;
+      margin: 10px; /* Adjust left margin here */
+      list-style: none;
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+
+
+   
+    }
+    .Element{
+    background-color: burlywood;
+    width: 85%;
+        height: 80%;
+        float:right;
+    }
+
+    .colorSelector {
+      margin-top: 70vh;
+      background-color: antiquewhite;
+      position: absolute;
+      width: 100%;
+      height: 20%;
+    }
+
+  </style>
 </head>
 <body>
-</body></html>
+  <div class="container">
+    <div class="header">
+      <h1>Learn CSS</h1>
+    </div>
+  
+  <div class="content">
+    <div class="selectElements">
+      <ul>
+        <li>Form</li>
+        <li>Table</li>
+        <li><a href="list.html">List </a></li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+      </ul>
+    </div>
+    <div class="Element">
+        
+    </div>
+    <div class="colorSelector"></div>
+  </div>
+  </div>
+</body>
+</html>

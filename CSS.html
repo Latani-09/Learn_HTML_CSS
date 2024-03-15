@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn CSS</title>
+  <style>
+    body {
+      background-color: chocolate;
+    }
+
+    .header {
+      height: 10vh;
+      min-height: max-content;
+      background-color: antiquewhite;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    header, h1 {
+      color: chocolate;
+    }
+
+    .content {
+      height: 90vh;
+      position: relative;
+      margin-top: 8px;
+    }
+
+    .selectElements {
+      float: left;
+      width: 15%;
+      height: 80%;
+      min-width: fit-content;
+    }
+
+    .selectElements ul{
+        padding-inline-start: 0px;
+    }
+    .selectElements ul li {
+      background-color: darksalmon;
+      margin: 10px; /* Adjust left margin here */
+      list-style: none;
+      border-radius: 5px;
+      padding: 5px 5px 5px 5px;
+   
+    }
+
+      a:link {
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .selectElements a:visited {
+      text-decoration: none;
+    }
+    .selectElements li:hover{
+      background-color:bisque;
+    }
+    .selectElements a:active li {
+  
+      background-color:blanchedalmond;
+    }
+    .Element{
+    background-color: burlywood;
+    width: 85%;
+        height: 80%;
+        float:right;
+        overflow-x: scroll;
+    }
+.Element h3{
+    background-color: solid white;
+    border: solid black;
+    width: fit-content;
+    margin: 5px;
+    padding: 5px;
+}
+
+    .colorSelector {
+      margin-top: 70vh;
+      background-color: antiquewhite;
+      position: absolute;
+      width: 100%;
+      height: 20%;
+    }
+    #list{
+      margin-bottom: 5px;
+
+      height: 100%;
+      display:contents;
+    }
+    #table{
+      margin-top: 10px;
+      height: 100%;
+      display: block;
+      padding: 10px;
+    }
+    #table1{
+      width: 90%;
+      margin: auto;
+      border: solid black 0.5px
+    }
+    #table1 th{
+      background-color:chocolate ;
+      padding: 12px;
+    }
+    #table1 th, td {
+padding: 8px;
+    text-align: center;
+    }
+
+    #table1 tr:nth-child(even){background-color: #f2f2f2;}
+
+    #table1 tr:hover {background-color: #ddd;}
+    #table1 tr:hover {background-color: coral;}
+  
+    .grp1 {
+    overflow: hidden; /* Clear floats */
+    height: 100%; /* Set height to 100% of parent (.Element) */
+    }
+
+    .grp1 div {
+        width: 33.33%; /* Each column takes 33.33% width */
+        float: left; /* Float each column left */
+    }
+
+    
+    .list1 li{
+        list-style-type: circle;
+        list-style-position: inside;
+    }
+    .list2 li{
+        list-style-type: circle;
+        list-style-position: outside;
+    }
+    .list3 li{
+        display:inline;
+        margin-right: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Learn CSS</h1>
+    </div>
+  
+  <div class="content">
+    <div class="selectElements">
+      <ul>
+        <li>Form</li>
+        <li>Table</li>
+        <a href="#List"><li>List </li></a>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+        <li>Element4</li>
+      </ul>
+    </div>
+    <div class="Element">
+        <div class="List" id="List">
+            <h3>List - Styles</h3>
+            <div class="grp1">
+                
+                <div>
+                <ul class="list list1">
+                    <li>Coffee - A brewed drink prepared from roasted coffee beans...</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                </div>
+                <div>
+                <ul class="list list2">
+                    <li>Coffee - A brewed drink prepared from roasted coffee beans...text1 text2 text3 text 4</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                </div>
+                <div>
+                <ul class="list list3">
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ul>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="Table" id="table">
+          <h3>Table - Styles</h3>
+          <table id="table1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>Don</td>
+                  <td>34</td>
+                  <td>USA</td>
+              </tr>
+              <tr>
+                  <td>Mary</td>
+                  <td>36</td>
+                  <td>Canada</td>
+              </tr>
+              <tr>
+                  <td>John</td>
+                  <td>28</td>
+                  <td>UK</td>
+              </tr>
+              <tr>
+                  <td>Alice</td>
+                  <td>42</td>
+                  <td>Australia</td>
+              </tr>
+              <tr>
+                  <td>Michael</td>
+                  <td>31</td>
+                  <td>Germany</td>
+              </tr>
+              <tr>
+                  <td>Sophia</td>
+                  <td>39</td>
+                  <td>France</td>
+              </tr>
+              <!-- Add more rows as needed -->
+          </tbody>
+          
+          </table>
+
+        </div>
+    </div>
+    <div class="colorSelector"></div>
+  </div>
+  </div>
+</body>
+</html>
