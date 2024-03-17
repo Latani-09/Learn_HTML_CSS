@@ -1,0 +1,267 @@
+:root{
+    --bgcolorChoc:#a46a37;
+    --complmentoryChoc:#2c8de3;
+    --textColor:antiquewhite;
+  }
+  body {
+    background-color: var(--bgcolorChoc);
+  }
+@media screen and (maxwidth:600px){
+    .Element{
+        background-color: rgb(252, 240, 224);
+        width: 100%;
+            height: 80%;
+            position:relative;
+            overflow-x: scroll;}
+        .selectElements {
+                position: relative;
+                width: 100%;
+                height: 80%;
+                min-width: fit-content;
+              }
+              .colorSelector {
+                margin-top:8px;
+                background-color: antiquewhite;
+                position: relative;
+                width: 100%;
+                height: 20vh;
+              }
+              .selectElements ul li {
+
+                display: inline;
+
+             
+              }
+
+}
+.Element{
+    background-color: rgb(252, 240, 224);
+    width: 85%;
+        height: 80%;
+        float:right;
+        overflow-x: scroll;}
+    .selectElements {
+            float: left;
+            width: 15%;
+            height: 80%;
+            min-width: fit-content;
+          }
+  .header {
+    height: 10vh;
+    min-height: max-content;
+    background-color: antiquewhite;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  header, h1 {
+    color: var(--bgcolorChoc);
+  }
+
+  .content {
+    height: 84vh;
+    position: relative;
+    margin-top: 8px;
+  }
+
+  
+  .selectElements ul{
+      padding-inline-start: 0px;
+  }
+  .selectElements ul li {
+    background-color: darksalmon;
+    margin: 10px; /* Adjust left margin here */
+    list-style: none;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+ 
+  }
+   a{
+display: block;
+}
+    a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .selectElements a:visited {
+    text-decoration: none;
+  }
+  .selectElements li:hover{
+    background-color:bisque;
+  }
+  .selectElements a:active li {
+
+    background-color:blanchedalmond;
+  }
+  
+  }
+.Element h3{
+  background-color: var(--bgcolorChoc) ;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 5px;
+  padding: 5px;
+  margin: 50px auto 8px auto;
+}
+
+  .colorSelector {
+    margin-top:70vh;
+    background-color: antiquewhite;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+  }
+  #list{
+    margin-bottom: 5px;
+
+    display:contents;
+  }
+  #table{
+    margin-top: 10px;
+
+    display: block;
+    padding: 10px;
+  }
+  #Form{
+  
+    margin-top: 10px;
+  }
+  #table1{
+    width: 90%;
+    margin: auto;
+    border: solid black 0.5px
+  }
+  #table1 th{
+    background-color:var(--bgcolorChoc) ;
+    padding: 12px;
+  }
+  #table1 th, td {
+padding: 8px;
+  text-align: center;
+  }
+
+  #table1 tr:nth-child(even){background-color: #b6b4b4;}
+
+  #table1 tr:hover {background-color: #ddd;}
+  #table1 tr:hover {background-color: coral;}
+
+  .grp1 {
+  overflow: hidden; /* Clear floats */
+/* Set height to 100% of parent (.Element) */
+  }
+
+  .grp1 div {
+      width: 33.33%; /* Each column takes 33.33% width */
+      float: left; /* Float each column left */
+  }
+
+  
+  .list1 li{
+      list-style-type: circle;
+      list-style-position: inside;
+  }
+  .list2 li{
+      list-style-type: circle;
+      list-style-position: outside;
+  }
+  .list3 li{
+      display:inline;
+      margin-right: 5px;
+  }
+
+  /*form*/
+  *{
+    box-sizing: border-box;
+  }
+  .formcontainer{
+    padding:8px 8px 8px 8px;
+    border-radius: 5px;
+    background-color: #d2c5c5;
+    min-height: fit-content;
+    position: relative;
+  }
+  .col-25{
+    float: left;
+    width: 25%;
+    
+
+  }
+  .col-75{
+    float: left;
+    width: 75%;
+  
+
+  }
+  .row::after {
+content: "";
+display: table;
+clear: both;
+}
+.form input,select,textarea,option{
+width: 100%;
+padding: 5px;
+margin-top: 8px;
+border-radius: 5px;
+
+}
+.form input[type="number"], input[type="tel"] {
+width: fit-content;
+padding: 5px;
+margin-top: 8px;
+border-radius: 5px;
+
+}
+input[type=submit] {
+width: auto;
+background-color:var(--complmentoryChoc);
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+margin-bottom: 5px;
+}
+.textarea{
+resize: vertical;
+}
+.form .row label{
+padding: 12px 12px 12px 12px;;
+display: inline-block; 
+
+}
+
+/*--------------------------------------------------------------------Gallery view--
+image rezie all images same size 
+grid or left to put images next to each other  ---------------*/
+
+.gallery{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+
+
+
+}
+.gallery img{
+
+    object-fit: cover;
+    width: 180px;
+    height:100px;
+
+
+    
+
+}
+.gallery .desc{
+    padding: 5px;
+    margin-top:8px;
+    height:50px;
+    width: 180px;
+    word-wrap: normal;
+}

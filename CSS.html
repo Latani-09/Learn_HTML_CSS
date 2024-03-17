@@ -2,142 +2,8 @@
 <html>
 <head>
   <title>Learn CSS</title>
-  <style>
-    body {
-      background-color: chocolate;
-    }
-
-    .header {
-      height: 10vh;
-      min-height: max-content;
-      background-color: antiquewhite;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-    }
-
-    header, h1 {
-      color: chocolate;
-    }
-
-    .content {
-      height: 90vh;
-      position: relative;
-      margin-top: 8px;
-    }
-
-    .selectElements {
-      float: left;
-      width: 15%;
-      height: 80%;
-      min-width: fit-content;
-    }
-
-    .selectElements ul{
-        padding-inline-start: 0px;
-    }
-    .selectElements ul li {
-      background-color: darksalmon;
-      margin: 10px; /* Adjust left margin here */
-      list-style: none;
-      border-radius: 5px;
-      padding: 5px 5px 5px 5px;
-   
-    }
-
-      a:link {
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    .selectElements a:visited {
-      text-decoration: none;
-    }
-    .selectElements li:hover{
-      background-color:bisque;
-    }
-    .selectElements a:active li {
-  
-      background-color:blanchedalmond;
-    }
-    .Element{
-    background-color: burlywood;
-    width: 85%;
-        height: 80%;
-        float:right;
-        overflow-x: scroll;
-    }
-.Element h3{
-    background-color: solid white;
-    border: solid black;
-    width: fit-content;
-    margin: 5px;
-    padding: 5px;
-}
-
-    .colorSelector {
-      margin-top: 70vh;
-      background-color: antiquewhite;
-      position: absolute;
-      width: 100%;
-      height: 20%;
-    }
-    #list{
-      margin-bottom: 5px;
-
-      height: 100%;
-      display:contents;
-    }
-    #table{
-      margin-top: 10px;
-      height: 100%;
-      display: block;
-      padding: 10px;
-    }
-    #table1{
-      width: 90%;
-      margin: auto;
-      border: solid black 0.5px
-    }
-    #table1 th{
-      background-color:chocolate ;
-      padding: 12px;
-    }
-    #table1 th, td {
-padding: 8px;
-    text-align: center;
-    }
-
-    #table1 tr:nth-child(even){background-color: #f2f2f2;}
-
-    #table1 tr:hover {background-color: #ddd;}
-    #table1 tr:hover {background-color: coral;}
-  
-    .grp1 {
-    overflow: hidden; /* Clear floats */
-    height: 100%; /* Set height to 100% of parent (.Element) */
-    }
-
-    .grp1 div {
-        width: 33.33%; /* Each column takes 33.33% width */
-        float: left; /* Float each column left */
-    }
-
-    
-    .list1 li{
-        list-style-type: circle;
-        list-style-position: inside;
-    }
-    .list2 li{
-        list-style-type: circle;
-        list-style-position: outside;
-    }
-    .list3 li{
-        display:inline;
-        margin-right: 5px;
-    }
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" href="StyleSheet.css">
 </head>
 <body>
   <div class="container">
@@ -148,10 +14,11 @@ padding: 8px;
   <div class="content">
     <div class="selectElements">
       <ul>
-        <li>Form</li>
-        <li>Table</li>
-        <a href="#List"><li>List </li></a>
-        <li>Element4</li>
+    
+        <li> <a href="#List">List</a> </li>
+        <li> <a href="#Form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#galleryView">Gallery</a></li>
         <li>Element4</li>
         <li>Element4</li>
         <li>Element4</li>
@@ -235,10 +102,157 @@ padding: 8px;
           
           </table>
 
+     
+        <div class="form" id="Form">
+          <h3>Form - Styles</h3>
+          <div class="formcontainer">
+            <form>
+              <div class="title">
+                <h4>Member Details Form</h4>
+              </div>
+              <div class="row">
+                <div class="col-25"><label for="name">Name</label></div>
+                <div class="col-75"><input id="name" name="nameInput" placeholder="Enter your name" type="text" required></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25"><label for="age">Age</label></div>
+                <div class="col-75"><input id="age" name="ageInput" type="number" placeholder="XX" maxlength="3"></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25"><label for="Phone-no">Phone</label></div>
+                <div class="col-75"><input id="Phone-no" name="tel-input" placeholder="000-0000000" required></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25"><label for="email">Email</label></div>
+                <div class="col-75"><input id="email" name="emailInput" type="email" placeholder="Enter your email" required></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25"><label for="gender">Gender</label></div>
+                <div class="col-75">
+                  <select id="gender" name="genderInput">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25"><label for="Address">Address</label></div>
+                <div class="col-75"><textarea id="Address" name="Address" placeholder="Enter your address"></textarea></div>
+              </div>
+            
+              <div class="row">
+                <div class="col-25"><label for="occupation">Occupation</label></div>
+                <div class="col-75"><input id="occupation" name="occupationInput" placeholder="Enter your occupation" type="text"></div>
+              </div>
+              
+              <div class="row">
+                <input type="submit" value="Submit"> <!-- value should be mentioned as submit -->
+              </div>
+            </form>
+            
         </div>
+      </div>
+      <div id="galleryView">
+        <h3>Gallery - Styles</h3>
+        <div class="gallery">     
+          <img src="Copy right free images/beach-8268375_640.jpg" alt="Beach image"> 
+          <p class="desc">A serene beach with golden sands and clear blue water.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/boat-8614314_640.jpg" alt="Boat image"> 
+          <p class="desc">A small fishing boat floating on calm waters.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/bottle-caps-8220744_640.webp" alt="Bottle caps image"> 
+          <p class="desc">Colorful bottle caps arranged in a pattern.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/car-7828554_640.webp" alt="Car image"> 
+          <p class="desc">A modern car parked on a city street.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/church-8615302_640.jpg" alt="Church image"> 
+          <p class="desc">An old stone church with a tall steeple.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/coffee-beans-8286087_640.webp" alt="Coffee beans image"> 
+          <p class="desc">Freshly roasted coffee beans in a pile.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/columns-8171283_640.jpg" alt="Columns image"> 
+          <p class="desc">Ancient columns standing tall in a historical site.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/egret-8603229_640.jpg" alt="Egret image"> 
+          <p class="desc">A graceful egret standing near a pond.</p>
+        </div>
+        <div class="gallery">     
+          <img src="Copy right free images/flower-8204791_640.webp" alt="Flower image"> 
+          <p class="desc">Vibrant flowers .</p>
+        </div> 
+        <div class="gallery">
+          <img src="Copy right free images/flower-8559381_640.webp" alt=" image"> 
+          <p class="desc"> flowers .</p> </div>
+        <div class="gallery">     
+          <img src="Copy right free images/flowers-8017976_640.webp" alt=" image"> 
+          <p class="desc">Vibrant flowers .</p></div>
+          
+        <div class="gallery">     
+          <img src="Copy right free images/heron-7882659_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+        
+        <div class="gallery">     
+          <img src="Copy right free images/iceberg-8179206_640.jpg" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+          
+        <div class="gallery">     
+          <img src="Copy right free images/island-8555092_640.jpg" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/istockphoto-510010356-2048x2048.jpg" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/labrador-8554882_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+        <div class="gallery">     
+          <img src="Copy right free images/labrador-retriever-7885881_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+        <div class="gallery">     
+          <img src="Copy right free images/meerkat-8345747_640.jpg" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/narzissen-8598191_640.webp" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/plum-blossom-7933169_640.webp" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/pylon-8574348_640.jpg" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/roses-8247285_640.webp" alt=" image"> 
+          <p class="desc">Description about the image .</p></div>
+        <div class="gallery">     
+          <img src="Copy right free images/spring-7901015_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+        <div class="gallery">     
+          <img src="Copy right free images/sunlight-8555131_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+        <div class="gallery">     
+          <img src="Copy right free images/tit-8620213_640.webp" alt=" image">
+          <p class="desc">Description about the image .</p> </div>
+      </div>
+   
+    </div>
     </div>
     <div class="colorSelector"></div>
-  </div>
+  
   </div>
 </body>
 </html>
