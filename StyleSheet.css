@@ -6,44 +6,30 @@
   body {
     background-color: var(--bgcolorChoc);
   }
-@media screen and (maxwidth:600px){
-    .Element{
-        background-color: rgb(252, 240, 224);
-        width: 100%;
-            height: 80%;
-            position:relative;
-            overflow-x: scroll;}
-        .selectElements {
-                position: relative;
-                width: 100%;
-                height: 80%;
-                min-width: fit-content;
-              }
-              .colorSelector {
-                margin-top:8px;
-                background-color: antiquewhite;
-                position: relative;
-                width: 100%;
-                height: 20vh;
-              }
-              .selectElements ul li {
 
-                display: inline;
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-             
-              }
-
-}
 .Element{
     background-color: rgb(252, 240, 224);
     width: 85%;
-        height: 80%;
+min-height: 80vh;
         float:right;
-        overflow-x: scroll;}
+   }
     .selectElements {
             float: left;
             width: 15%;
-            height: 80%;
+
             min-width: fit-content;
           }
   .header {
@@ -96,7 +82,7 @@ display: block;
     background-color:blanchedalmond;
   }
   
-  }
+  
 .Element h3{
   background-color: var(--bgcolorChoc) ;
   color: white;
@@ -108,16 +94,17 @@ display: block;
 }
 
   .colorSelector {
-    margin-top:70vh;
+    
     background-color: antiquewhite;
-    position: absolute;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     height: 20vh;
   }
   #list{
     margin-bottom: 5px;
 
-    display:contents;
+    display:block;
   }
   #table{
     margin-top: 10px;
@@ -154,7 +141,7 @@ padding: 8px;
   }
 
   .grp1 div {
-      width: 33.33%; /* Each column takes 33.33% width */
+     
       float: left; /* Float each column left */
   }
 
@@ -199,18 +186,19 @@ padding: 8px;
 content: "";
 display: table;
 clear: both;
+margin: 8px;
 }
 .form input,select,textarea,option{
 width: 100%;
 padding: 5px;
-margin-top: 8px;
+
 border-radius: 5px;
 
 }
 .form input[type="number"], input[type="tel"] {
 width: fit-content;
 padding: 5px;
-margin-top: 8px;
+
 border-radius: 5px;
 
 }
@@ -229,7 +217,7 @@ margin-bottom: 5px;
 resize: vertical;
 }
 .form .row label{
-padding: 12px 12px 12px 12px;;
+padding: 5px 5px 5px 5px;;
 display: inline-block; 
 
 }
@@ -242,8 +230,10 @@ grid or left to put images next to each other  ---------------*/
     box-sizing: border-box;
     border: 1px solid #ccc;
     float: left;
-    margin: 5px 5px 5px 5px;
+    margin-left: auto;
+    margin: 5px;;
     padding: 5px 5px 5px 5px;
+    width:24%
 
 
 
@@ -251,7 +241,7 @@ grid or left to put images next to each other  ---------------*/
 .gallery img{
 
     object-fit: cover;
-    width: 180px;
+    width: 100%;
     height:100px;
 
 
@@ -262,6 +252,43 @@ grid or left to put images next to each other  ---------------*/
     padding: 5px;
     margin-top:8px;
     height:50px;
-    width: 180px;
+    width: 100%;
     word-wrap: normal;
+}
+@media only screen and (max-width: 768px){
+  .Element{
+      background-color: rgb(252, 240, 224);
+      width: 100%;
+          height: 80%;
+          position:relative;
+}
+      .selectElements {
+              position: relative;
+              width: 100%;
+      
+              min-width: fit-content;
+            }
+            .colorSelector {
+             
+              background-color: antiquewhite;
+              position: sticky;
+              bottom:0;
+              width: 100%;
+              height: 20vh;
+            }
+
+    .col-25 .col-75
+    {width:100%}
+    [class*="col-"] {
+      margin-left:50px;
+            width: 100%;
+    }
+    .selectElements {
+      width:100%;}
+      .gallery{
+        width:49.999%;
+
+      }
+
+
 }
