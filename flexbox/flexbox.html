@@ -1,0 +1,56 @@
+<!--Flex box
+one dimensional
+main and cros axis
+flex-direction property to change the main direction 
+justify-content. For item alignment on main axis.
+align-items. For item alignment on cross axis.
+align-self. For unique flex items on cross axis.
+align-content. Used for packing flex lines and control over space.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="./flexbox.css"></link>
+<script>
+ 
+</script>
+<script src="./flexbox.js"></script>
+
+    </head>
+
+        <body>
+
+            <div class="flex-container" id="flex1">
+              <div class="box box1">  One..</div>
+              <div class="box box2">  Two..</div>
+              <div class="box box3">  Three..</div>
+              <div class="box box4">  Four..</div>
+              <div class="box box5">  Five..</div>
+              <div class="box box6">  Six..</div>
+              <div class="box box7">  Seven..</div>
+              <div class="box box8">  Eight..</div>
+              <div class="box box9">  Nine..</div>
+              <div class="box box10">  Ten..</div>
+              <div class="box box11">  Eleven..</div>
+              <div class="box box12">  Twelve..</div>
+              <div class="box box13">  Thirteen..</div>
+              <div class="box box14">  Fourteen..</div>
+            </div>
+           
+            <fieldset>
+            <b>align-content:</b>
+            <input id="center" type="radio" value='center' onclick="changeFlexStyle(this.value)" name="justifyContent">
+            <label for="center" >center</label>
+            <input id="around" type="radio" value='space-around' onclick="changeFlexStyle(this.value)" name="justifyContent">
+            <label for="around" >space-around</label>
+            <input id="between" type="radio" value='space-between' onclick="changeFlexStyle(this.value)" name="justifyContent" >
+            <label for="between" >space-between</label>
+            <input id="end" type="radio" value='flex-end' onclick="changeFlexStyle(this.value)" name="justifyContent">
+            <label for="end" >flex-end</label>
+            <input id="start" type="radio" value='flex-start' onclick="changeFlexStyle(this.value)" name="justifyContent">
+            <label for="start" >flex-start</label>
+           </fieldset>
+           <button >clickMe</button>
+           <button onclick="changeBackground()" >Change Backgound</button>
+          </body>
+</html>
