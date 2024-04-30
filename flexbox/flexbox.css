@@ -5,18 +5,32 @@ body{
 
 
 .box{
-    background-color: rgb(174, 127, 255);
+    background-color: rgb(140, 131, 154);
     border-radius: 5px;
-    margin: 2px;
-    padding: 10px;
+    margin: 4px;
+    box-sizing: border-box;
+    padding: 60px;
     min-height: 10px;
+    max-height: 20px;
+    height: auto;
+    outline: auto;
+    
+    
 
 }
 #flex1{
-    width: 400px;
     display: flex;
-
-
+    
     flex-wrap: wrap;
     border: 1px solid black;
+    height: 600px;
+}
+.box p{
+    background-color:white;
+    margin: auto;
+    vertical-align : center;
+    padding: 5px;
+    
+
+    
 }

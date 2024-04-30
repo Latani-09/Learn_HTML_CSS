@@ -15,6 +15,13 @@ function changeFlexStyle(value){
 document.getElementById('flex1').style.justifyContent=value;
 
 }
+function changealignContent(value){
+  
+    console.log('style',document.getElementById('flex1').style.alignContent);
+    
+document.getElementById('flex1').style.alignContent=value;
+
+}
 function changeBackground(){
     const curColour = document.body.style.backgroundColor;
         currentColor = curColour === 'red' ? 'blue' : 'red';
